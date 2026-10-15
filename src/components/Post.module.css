@@ -1,0 +1,49 @@
+.container {
+  background: purple;
+  min-width: 240px;
+  max-width: 480px;
+  padding: 10px;
+}
+
+.thumbnail {
+  background: red;
+  width: 100px;
+  aspect-ratio: 1; /* 상대적으로 비율을 맞춰주는 속성 */
+}
+
+.info {
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.title {
+}
+
+.text {
+  font-size: 13px;
+}
+
+.writer_box {
+  background: blue;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* display 사용 시에만 적용 */
+}
+
+.writer_name {
+  font-size: 13px;
+}
+
+.writer_thumbnail {
+  width: 30px;
+  height: 30px;
+  background: green;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.createdAt {
+  font-size: 12px;
+}
