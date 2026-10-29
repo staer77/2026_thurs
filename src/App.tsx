@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         path: "/Settings",
         element: <Settings />,
       },
-    ]
+    ],
   },
   {
     path: "/createAccount",
@@ -34,16 +34,42 @@ const router = createBrowserRouter([
   {
     path: "/loginAccount",
     element: <LoginAccount />,
-  }
-
+  },
 ]);
 
 function App() {
   return (
-    <div style={{height: "100vh"}}>
+    <div style={{ height: "100vh" }}>
       <RouterProvider router={router} />
     </div>
-  )
+  );
 }
 
-export default App
+// import { useState, useEffect } from 'react'
+// import { supabase } from './utils/supabase'
+
+// export default function App() {
+//   const [todos, setTodos] = useState([])
+
+//   useEffect(() => {
+//     async function getTodos() {
+//       const { data: todos } = await supabase.from('todos').select()
+
+//       if (todos) {
+//         setTodos(todos)
+//       }
+//     }
+
+//     getTodos()
+//   }, [])
+
+//   return (
+//     <ul>
+//       {todos.map((todo) => (
+//         <li key={todo.id}>{todo.name}</li>
+//       ))}
+//     </ul>
+//   )
+// }
+
+export default App;
