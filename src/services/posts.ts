@@ -29,7 +29,7 @@ export interface IPost {
 export const getPosts = async (): Promise<IPost[]> => {
   // [TEST..]
   const result = await supabase
-    .from("table_name")
+    .from("Posts")
     .select("*")
     .then((result) => {
       console.log(result);
